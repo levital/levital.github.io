@@ -1,0 +1,49 @@
+body {
+	background: url(../img/levital-background.svg) no-repeat center fixed;
+	background-size:cover;
+	};
+.indicates-required {
+	text-align: right;
+}
+
+#lev-globe {
+	bottom:5px;
+	left: 0px;
+	z-index: -1;
+	position:fixed;
+	width: 100%;
+}
+.lev-callout {
+	background: rgba($white, 0.55);
+}
+/* MEDIA QUERIES 
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+#lev-logo {
+	padding-top: 1rem;
+}
+#lev-form {
+	padding-top: 2rem;
+}
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+#lev-logo {
+	padding-top: 5rem;
+}
+#lev-form {
+	padding-top: 5rem;
+}
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+#lev-logo {
+	padding-top: 5rem;
+}
+#lev-form {
+	padding-top: 5rem;
+
+}}

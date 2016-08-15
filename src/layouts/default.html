@@ -1,0 +1,34 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levital</title>
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+
+</head>
+<body>
+
+  {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+  {{> body}}
+
+<!-- Presenting globe -->
+ <div id="lev-globe">
+    <object data="{{root}}assets/img/globe.svg" type="image/svg+xml">
+  		<img src="{{root}}assets/img/globe.png">
+	</object>
+ </div>
+
+ <!-- Loading Javascript -->
+ <script src="{{root}}assets/js/app.js"></script> 
+
+<!-- Moving globe up -->
+ <script type="text/javascript">
+	$("#lev-globe").velocity({ bottom:"60%", left: "100%"}, { duration: 20000, easing: "easeInQuad" } );
+ </script>
+
+</body>
+</html>
